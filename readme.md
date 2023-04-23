@@ -1,0 +1,1 @@
+# Logseq Wakatime plugin
