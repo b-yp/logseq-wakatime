@@ -1,8 +1,8 @@
-import { BASE_URL } from './config'
 
 const request = async (url: string, { method = 'GET', headers = {}, params = {}, body = {} } = {}) => {
-  if (!logseq.settings?.apiKey) return
+  if (!logseq.settings?.apiKey && !logseq.settings?.url) return
   const apiKey = btoa(logseq.settings?.apiKey);
+  const baseUrl = logseq.settings?.url.endsWith('/') ? logseq.settings?.url : `${logseq.settings?.url}/`
 
   const defaultHeaders = {
     'Content-Type': 'application/json',
@@ -19,7 +19,7 @@ const request = async (url: string, { method = 'GET', headers = {}, params = {},
   };
 
   try {
-    const response = await fetch(`${BASE_URL}${fullUrl}`, config);
+    const response = await fetch(`${baseUrl}${fullUrl}`, config);
 
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
