@@ -13,6 +13,13 @@ export const initSetting = () => {
       title: "Interval",
       description: "The interval time for sending a heartbeat, Unit: second.",
       default: 5,
+    },
+    {
+      key: 'url',
+      type: 'string',
+      title: 'Wakatime URL',
+      description: 'The URL of Wakatime',
+      default: 'https://api.wakatime.com/api/v1/'
     }
   ])
 }

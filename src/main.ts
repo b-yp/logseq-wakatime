@@ -46,7 +46,11 @@ async function main() {
   initSetting()
 
   if (!logseq.settings?.apiKey) {
-    logseq.UI.showMsg(`Please set the API key first`, "error")
+    logseq.UI.showMsg(`Please set the Wakatime API key first`, "error")
+  }
+
+  if (logseq.settings?.url.trim() === '') {
+    logseq.UI.showMsg(`Please set the Wakatime host first`, "error")
   }
 
   logseq.onSettingsChanged((current) => {
