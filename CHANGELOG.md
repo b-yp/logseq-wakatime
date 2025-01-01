@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/b-yp/logseq-wakatime/compare/v1.0.0...v1.1.0) (2025-01-01)
+
+
+### Features
+
+* support customize wakatime url ([10578b2](https://github.com/b-yp/logseq-wakatime/commit/10578b21a7a47b67b5755ce463209f08360c682c))
+
 # 1.0.0 (2024-08-15)
 
 
