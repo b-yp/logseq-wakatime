@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/b-yp/logseq-wakatime/compare/v1.1.0...v1.1.1) (2025-03-24)
+
+
+### Bug Fixes
+
+* Change the User-Agent ([a9378b5](https://github.com/b-yp/logseq-wakatime/commit/a9378b5a252e6a38c58b4ee7fccafdfb0847a2eb))
+
 # [1.1.0](https://github.com/b-yp/logseq-wakatime/compare/v1.0.0...v1.1.0) (2025-01-01)
 
 
