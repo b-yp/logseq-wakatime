@@ -35,7 +35,7 @@ const request = async (url: string, { method = 'GET', headers = {}, params = {},
 
 const get = (url: string, params = {}) => request(url, { method: 'GET', params });
 
-const post = (url: string, body = {}) => request(url, { method: 'POST', body });
+const post = (url: string, body = {}, headers?: Record<string, string>) => request(url, { method: 'POST', body, headers });
 
 const put = (url: string, body = {}) => request(url, { method: 'PUT', body });
 
